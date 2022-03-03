@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Raleway';
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/hero2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(71, 69, 69, 0.397);
+}
+.header--menuContainer {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.logo {
+    width: 10rem;
+    height: 6rem;
+}
+
+.header--heroContainer {
+    position: relative;
+}
