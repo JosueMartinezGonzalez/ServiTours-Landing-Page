@@ -1,15 +1,56 @@
-* {
-    margin: 0; 
+
+<<<<<<< HEAD
+
+=======
+*{ 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Raleway';
 }
 
-body { 
-    min-height: 500vh;
-    background-image: linear-gradient(-45deg, #e3ddd9 50%, #36221c 50%);
+body {
+    width: 100%;
+    height: 100%;
     font-family: 'Anton', sans-serif;
     font-family: 'Permanent Marker', cursive;
+
 }
+
+.header {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/hero2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(71, 69, 69, 0.397);
+}
+.header--menuContainer {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.logo {
+    width: 10rem;
+    height: 6rem;
+}
+
+.header--heroContainer {
+    position: relative;
+}
+
+/* Carousel */
 
 .titulo {
     font-size: 70px;
@@ -80,3 +121,4 @@ body {
     margin: 0 15px;
     background: #13131344;
 }
+>>>>>>> 106206fc0fafa0639d7b86ae975e9c3cbcc0185e
