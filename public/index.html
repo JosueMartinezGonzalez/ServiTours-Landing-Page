@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../src/styles/main.css">
 
      <!-- Fonts -->
-     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap" rel="stylesheet">
+
     
      <!-- Materilize Css  -->
      
@@ -16,28 +19,43 @@
 
 </head>
 <body>
-
-<!-- Carrousel  -->
-    <Div class="container">
+    <div class="container">
         <div class="row">
-            <div class="carousel center-align">
-                <div class="carousel-item">
-                    <h2 class="subtitulo">Servicio</h2>
-                    <div class="liena-division">
+            <div class="col s12">
+                <h1 class="center-align titulo">SERVICIOS</h1>
 
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">TRANSPORTE SANTA MARTA</h2>
+                        <div class="linea-division"></div>
+                        <p class="sabor">Siéntase seguro y exclusivo con nuestro transporte especial desde Santa Marta.</p>
+                        <img src="../src/images/muffins-04.jpg" width="600" alt="">
                     </div>
-                    <p class="2-subtitulo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A expedita fugit obcaecati nihil quidem cupiditate esse sed soluta, aut reprehenderit facilis mollitia! Corporis aut sint eaque placeat, quia rerum autem? </p>
 
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">PLANES TURISTICOS SANTA MARTA</h2>
+                        <div class= "linea-division"></div>
+                        <p class="sabor">Te ofrecemos un paquete turistico a tu medida en Santa Marta y alrededores.</p>          
+                        <img src="../src/images/muffins-03.jpg" width="600" alt="">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">EXPERIENCIAS SANTA MARTA</h2>
+                        <div class= "linea-division"></div>
+                        <p class="sabor">Recorre Santa Marta y alrededores con las mejores experiencias.</p>          
+                        <img src="../src/images/muffins-03.jpg" width="600" alt="">
+                    </div>
+                    
+                    
                 </div>
-
             </div>
-
         </div>
-    </Div>
-    
-    <!-- Materilize Js -->
+    </div>
+
+    <!-- Materialize.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <!-- JS Main -->
-    <script src="js/main.js"></script>
+    <script src="../src/js/main.js"></script>
 </body>
 </html>
