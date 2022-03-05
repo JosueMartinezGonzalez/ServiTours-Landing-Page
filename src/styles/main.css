@@ -9,6 +9,9 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+
 }
 
 .header {
@@ -105,4 +108,93 @@ input[type=number] { -moz-appearance:textfield; }
     -webkit-box-shadow:0px 30px 40px 10px rgba(49, 48, 48, 0.562) ;
     -moz-box-shadow:0px 30px 40px 10px rgba(49, 48, 48, 0.562) ;
     box-shadow:0px 30px 40px 10px rgba(49, 48, 48, 0.562) ;
+}
+
+/* Carousel */
+
+.titulo {
+    font-size: 70px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 70px;
+    color: #3acced;
+}
+
+.subtitulo {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+
+.sabor {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Anton', sans-serif;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 100%;
+    height: 100%;
+}
+.linea-division:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    height: 500px;
+    background-color: rgba(31, 29, 29, 0.397);
+    border-radius: 15px;
+}
+
+/* ------------------------- */
+/* Estilos de Materialize */
+/* ------------------------- */
+.carousel {
+    min-height: 800px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.carousel .carousel-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    user-select: none;
+    width: 500px !important;
+    height: 500px !important;
+    padding: 10px 25px;
+}
+
+.carousel .carousel-item img {
+    width: 500px !important;
+    height: 500px !important;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.carousel .indicators .indicator-item {
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: #13131344;
 }
