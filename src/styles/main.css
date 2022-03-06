@@ -63,6 +63,12 @@ body {
     background-color: rgba(31, 29, 29, 0.918);
     border: 6px solid #1f1e1e8e;
 }
+.callNumber .phone {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    color: #ffffff;
+}
 
 .header--heroContainer {
     position: relative;
@@ -321,3 +327,65 @@ input[type=number] { -moz-appearance:textfield; }
 
 
 /* Footer */
+.footer {
+    width: 100%;
+    height: 325px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 75px;
+    background-color: rgba(31, 29, 29, 0.788);
+}
+.footer--infoContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 50px;
+}
+.footer--infoContainer .footer--infoContainer__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.footer--infoContainer .footer--infoContainer__contact h2 {
+    height: 35px;
+    margin: 0;
+    font-size: 2rem;
+}
+.footer--infoContainer .footer--infoContainer__contact a {
+    font-size: 1.5rem;
+    color: #3acced;
+}
+.footer--infoContainer__servicetours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer--infoContainer__servicetours img {
+    width: 150px;
+    height: 100px;
+}
+.footer--infoContainer__servicetours p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.footer--copyContainer {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(31, 29, 29, 0.445);;
+}
+.footer--copyContainer span {
+    font-size: 0.8rem;
+}
+.footer--copyContainer a {
+    font-size: 1rem;
+}
