@@ -3,14 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Raleway';
 }
 
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
 
 }
 
@@ -163,7 +161,7 @@ input[type=number] { -moz-appearance:textfield; }
 /* Estilos de Materialize */
 /* ------------------------- */
 .carousel {
-    min-height: 800px;
+    min-height: 720px;
     margin-top: 25px;
     text-align: center;
 }
@@ -178,7 +176,8 @@ input[type=number] { -moz-appearance:textfield; }
     user-select: none;
     width: 500px !important;
     height: 500px !important;
-    padding: 10px 25px;
+    padding: 15px 25px;
+    margin-top: 50px;
 }
 
 .carousel .carousel-item img {
@@ -191,10 +190,84 @@ input[type=number] { -moz-appearance:textfield; }
     z-index: -1;
     border-radius: 15px;
 }
-
+/* .carousel .indicators {
+    margin-bottom: 70px !important;
+} */
 .carousel .indicators .indicator-item {
     border-radius: 0;
     transform: rotate(45deg);
     margin: 0 15px;
-    background: #13131344;
+    background: #13131344 !important;
+}
+.carousel .indicators .indicator-item.active {
+    background-color: #161616b4 !important;
+}
+
+
+/* Opinions Users */
+.container--opinions {
+    width: 100%;
+    height: 500px;
+    margin: 25px auto;
+    text-align: center;
+    color: #000000;
+}
+.container--opinions__users {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.opinion--user {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px;
+    padding: 25px;
+    background-color: rgba(185, 183, 183, 0.212);
+    border-radius: 15px;
+}
+.user--data {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.user--data img {
+    border-radius: 50%;
+    border: 2px solid #3acced;
+}
+.user {
+    text-align: left;
+    padding: 15px;
+}
+.user--data .user {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user .user__name {
+    width: 100%;
+    height: 25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.user .user__stars {
+    width: 100%;
+    height: 25px;
+    font-size: 1.2rem;
+}
+.user--testimony {
+    width: 100%;
+}
+.user--testimony p {
+    font-size: 1.2rem;
 }
