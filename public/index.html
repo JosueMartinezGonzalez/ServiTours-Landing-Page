@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap" rel="stylesheet">
         <!-- Materilize Css  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     </head>
 
 
@@ -39,12 +38,16 @@
                 </div>
             </div>
             <div class="heroContainer--form">
-                <form action="" class="form--container">
-                    <input type="text" name="name" placeholder="Ingrese su nombre" required>
-                    <input type="email" name="email" placeholder="Ingrese su Email" required>
-                    <input type="number" name="phone" placeholder="Ingrese su Teléfono" required>
-                    <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Ingrese su mensaje" required></textarea>
-                    <button class="send--message">Enviar</button>
+                <form id="form" class="form--container"  action="https://formspree.io/f/mvolryoq"
+                method="POST">
+                    <label for="name"></label>
+                    <input id="name" type="text" name="name" placeholder="Ingrese su nombre" required>
+                    <label for="email"></label>
+                    <input id="email" type="email" name="email" placeholder="Ingrese su Email" required>
+                    <label for="phone"></label>
+                    <input id="phone" type="number" name="phone" placeholder="Ingrese su Teléfono" required>
+                    <textarea id="message" class="message" name="message" id="message" cols="30" rows="10" placeholder="Ingrese su mensaje" required></textarea>
+                    <button type="submit" class="send--message">Enviar</button>
                 </form>
             </div>
         </div>
