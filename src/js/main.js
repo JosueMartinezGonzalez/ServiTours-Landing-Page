@@ -4,6 +4,9 @@ const $nameUser = document.querySelector('#name');
 const $emailUser = document.querySelector('#email');
 const $phoneUser = document.querySelector('#phone');
 const $messageUser = document.querySelector('#message');
+const $sendMessage = document.querySelector('#send--message');
+const $formResponse = document.querySelector('#responseForm')
+const $buttonClose = document.querySelector('#buttonClose')
 
 
 
@@ -21,6 +24,24 @@ function carouselAnimation() {
       noWrap: false
     });
   });
+}
+
+function handleDisplayNone() {
+  $formResponse.classList.add('activeForm')
+  $nameUser.classList.add('inactive')
+  $emailUser.classList.add('inactive')
+  $phoneUser.classList.add('inactive')
+  $messageUser.classList.add('inactive')
+  $sendMessage.classList.add('inactive')
+}
+
+function handleDisplayBlock() {
+  $formResponse.classList.remove('activeForm')
+  $nameUser.classList.remove('inactive')
+  $emailUser.classList.remove('inactive')
+  $phoneUser.classList.remove('inactive')
+  $messageUser.classList.remove('inactive')
+  $sendMessage.classList.remove('inactive')
 }
 
 
@@ -50,20 +71,13 @@ async function handleSubmit(event) {
   })
   if(response.ok) {
     this.reset()
-    alert('Gracias por contactarnos, te escribiremos pronto')
+    handleDisplayNone()
   }
-
 }
-
-
-
-
-
-
-
 
 
 
 // Execute Functions
 carouselAnimation();
 $form.addEventListener('submit', handleSubmit)
+$buttonClose.addEventListener('click', handleDisplayBlock)
