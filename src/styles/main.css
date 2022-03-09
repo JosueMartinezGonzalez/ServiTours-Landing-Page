@@ -113,7 +113,7 @@ body {
 }
 .heroContainer--content h1 {
     font-size: 4.8rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 .heroContainer--content p {
     font-size: 1.7rem;
