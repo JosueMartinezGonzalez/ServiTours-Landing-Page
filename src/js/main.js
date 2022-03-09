@@ -38,7 +38,7 @@ async function handleSubmit(event) {
   if($messageUser.value === null || $messageUser.value === '') {
     alert('Ingrese un mensaje expresando su interés')
   }
-  
+
   event.preventDefault();
   const form = new FormData(this)
   const response = await fetch(this.action, {
@@ -52,7 +52,7 @@ async function handleSubmit(event) {
     this.reset()
     alert('Gracias por contactarnos, te escribiremos pronto')
   }
-  
+
 }
 
 
