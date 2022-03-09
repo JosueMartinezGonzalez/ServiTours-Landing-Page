@@ -1,0 +1,25 @@
+/* Header Styles */
+
+.heroContainer--content {
+    width: 100%;
+}
+.heroContainer--content p {
+    margin-bottom: 5px;
+}
+.heroContainer--form  {
+    width: 100%;
+    height: 350px;
+}
+.send--message {
+    margin-top: 35px;
+}
+
+/* Carousel */
+.carousel .titulo {
+    margin-top: 75px;
+}
+
+/* Opinions Users */
+
+
+/* Footer */

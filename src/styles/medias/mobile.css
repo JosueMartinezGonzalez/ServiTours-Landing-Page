@@ -1,0 +1,31 @@
+/* Header Styles */
+.header--menuContainer {
+    justify-content: center;
+}
+.heroContainer--content h1 {
+    font-size: 3rem;
+}
+.heroContainer--content p {
+    margin-bottom: 40px;
+}
+
+
+/* Carousel */
+@media screen and (max-width: 475px) {
+    .carousel .carousel-item {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .carousel .carousel-item img {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .linea-division:before {
+        height: 300px;
+    }
+}
+
+/* Opinions Users */
+
+
+/* Footer */

@@ -7,23 +7,19 @@ const $messageUser = document.querySelector('#message');
 const $sendMessage = document.querySelector('#send--message');
 const $formResponse = document.querySelector('#responseForm')
 const $buttonClose = document.querySelector('#buttonClose')
+const $header = document.querySelector('#header')
+const $main = document.querySelector('#main')
+const $footer = document.querySelector('#footer')
+const $termsAndConditions = document.querySelector('#termsAndConditions')
+const $TermsButton = document.querySelector('#TermsButton')
+const $buttonCloseTerms = document.querySelector('#buttonCloseTerms')
 
 
 
 // Functions
-function carouselAnimation() {
-  document.addEventListener('DOMContentLoaded', () => {
-    const elementosCarousel = document.querySelectorAll('.carousel');
-    M.Carousel.init(elementosCarousel, {
-      duration: 150,
-      dist: -80,
-      shift: 5,
-      padding: 5,
-      numVisible: 3,
-      indicators: true,
-      noWrap: false
-    });
-  });
+function handleSize() {
+  const size = screen.width
+  return size
 }
 
 function handleDisplayNone() {
@@ -44,7 +40,20 @@ function handleDisplayBlock() {
   $sendMessage.classList.remove('inactive')
 }
 
+function mountConditions () {
+  $header.classList.add('inactiveTerms')
+  $main.classList.add('inactiveTerms')
+  $footer.classList.add('inactiveTerms')
+  $termsAndConditions.classList.remove('inactiveTerms')
+  window.scrollTo(0, 0)
+}
 
+function unMountConditions () {
+  $header.classList.remove('inactiveTerms')
+  $main.classList.remove('inactiveTerms')
+  $footer.classList.remove('inactiveTerms')
+  $termsAndConditions.classList.add('inactiveTerms')
+}
 
 async function handleSubmit(event) {
   if($nameUser.value === null || $nameUser.value === '') {
@@ -75,9 +84,38 @@ async function handleSubmit(event) {
   }
 }
 
+function carouselAnimation() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const elementosCarousel = document.querySelectorAll('.carousel');
+    if(handleSize<425) {
+      M.Carousel.init(elementosCarousel, {
+        duration: 150,
+        dist: -8,
+        shift: 5,
+        padding: 5,
+        numVisible: 3,
+        indicators: true,
+        noWrap: false
+      });
+    } else {
+      M.Carousel.init(elementosCarousel, {
+        duration: 150,
+        dist: -80,
+        shift: 5,
+        padding: 5,
+        numVisible: 3,
+        indicators: true,
+        noWrap: false
+      });
+    }
+  });
+}
+
 
 
 // Execute Functions
 carouselAnimation();
 $form.addEventListener('submit', handleSubmit)
 $buttonClose.addEventListener('click', handleDisplayBlock)
+$TermsButton.addEventListener('click', mountConditions)
+$buttonCloseTerms.addEventListener('click', unMountConditions)
