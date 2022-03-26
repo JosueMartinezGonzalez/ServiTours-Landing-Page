@@ -11,7 +11,8 @@ const $header = document.querySelector('#header')
 const $main = document.querySelector('#main')
 const $footer = document.querySelector('#footer')
 const $termsAndConditions = document.querySelector('#termsAndConditions')
-const $TermsButton = document.querySelector('#TermsButton')
+const $termsButton = document.querySelector('.termsButton')
+const $termsButtonFooter = document.querySelector('.termsButtonFooter')
 const $buttonCloseTerms = document.querySelector('#buttonCloseTerms')
 
 
@@ -117,5 +118,6 @@ function carouselAnimation() {
 carouselAnimation();
 $form.addEventListener('submit', handleSubmit)
 $buttonClose.addEventListener('click', handleDisplayBlock)
-$TermsButton.addEventListener('click', mountConditions)
+$termsButton.addEventListener('click', mountConditions)
+$termsButtonFooter.addEventListener('click', mountConditions)
 $buttonCloseTerms.addEventListener('click', unMountConditions)

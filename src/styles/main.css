@@ -361,7 +361,7 @@ input[type=number] { -moz-appearance:textfield; }
 .user .user__name {
     width: 100%;
     height: 25px;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .user .user__stars {
